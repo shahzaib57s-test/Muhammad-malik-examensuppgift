@@ -1,5 +1,5 @@
 document.addEventListener("keydown", (event) => {
-    console.log(event.key);
+    console.log(event);
 
     if(event.key == "key"){
         //document.getElementById("").style = "color:blue";
