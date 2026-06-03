@@ -1,10 +1,10 @@
 document.addEventListener("keydown", (event) => {
     console.log(event);
-    document.getElementById(event.key).style.backgroundColor = "yellow";
+    document.getElementById(event.code).style.backgroundColor = "gold";
 })
 
 
     document.addEventListener("keyup", (event) => {
         console.log(event);
-        document.getElementById(event.key).style.backgroundColor = "white"
+        document.getElementById(event.code).style.backgroundColor = "white"
 })

@@ -33,13 +33,13 @@ div:last-child {
 #rightshift{
     width: 185px;
 }
-#delete2{
+#Backspace{
     width: 125px;
 }
-#Capslock{
+#CapsLock{
     width: 100px;
 }
-#--{
+#Tab{
     width: 75px;
 }
 #Enter{
@@ -67,15 +67,14 @@ div:last-child {
     gap: 4px;
 }
 #row1 div{
-    height:25px ;
+    height:25px;
 }
 #row3{
     height: 50px;
 }
 
 .key{
-    background-color: yellow;
-    transition-duration: 0.5s;
+    transition-duration: 0.2s;
     transition-timing-function: ease-in;
 }
 
