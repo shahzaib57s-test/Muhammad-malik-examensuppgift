@@ -1,5 +1,5 @@
 body{
-    background-color: white;
+    background-color: darkorchid;
     color: black;
     text-align: center;
 }
@@ -12,14 +12,14 @@ body{
     display: grid;
     grid-template-rows: 1fr, 1fr, 60px ,1fr ,1fr, 1fr;
     grid-template-columns: 1fr;
+    
 }
 
 .row{
     display: flex;
     width: 100%;
     align-self: center;
-    gap: 3px;
-    
+    gap: 3px;   
 }
 
 div:last-child {
@@ -51,6 +51,9 @@ div:last-child {
     justify-content: center;
     align-items: center;
     font-size: 20px;
+}
+#row1{
+    gap: 4px;
 }
 #row3{
     height: 50px;
