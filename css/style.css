@@ -5,9 +5,8 @@ body{
 }
 
 .keyboard{
-    width: 920px;
+    width: 930px;
     height: 380px;
-    
     margin: 50px;
     border: solid black 2px;
     display: grid;
@@ -19,6 +18,7 @@ body{
     display: flex;
     width: 100%;
     align-self: center;
+    gap: 3px;
     
 }
 
@@ -28,6 +28,18 @@ div:last-child {
 
 #space{
     width: 300px;
+}
+#rightshift{
+    width: 185px;
+}
+#delete2{
+    width: 125px;
+}
+#Capslock{
+    width: 100px;
+}
+#--{
+    width: 75px;
 }
 .row  div{
     width: 50px;
@@ -40,14 +52,15 @@ div:last-child {
     align-items: center;
     font-size: 20px;
 }
-
-#row3 {
+#row3{
     height: 50px;
 }
-#Enter {
-    background-color: gray;
+#Enter{
+    background-color: white;
     position: relative;
-    width: 120px;
+    width: 100px;
     height: 120px;
     clip-path: polygon(100% 0, 100% 100%, 22% 100%, 22% 46%, 0 46%, 0 0);
+    border: black, solid, 2px;
+    
 }
