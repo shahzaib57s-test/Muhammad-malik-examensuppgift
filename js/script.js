@@ -1,5 +1,6 @@
 var PressedT = 0;
 var PressedF = 0;
+var PressedD = 0;
 
 document.addEventListener("keydown", (event) =>{
     console.log(event)
@@ -11,9 +12,10 @@ document.addEventListener("keydown", (event) =>{
     if(event.code == "KeyF"){
         if(event.code == "KeyF") {
         PressedF += 1;
-        if (PressedF >= 2){
+        if (PressedF >= 3){
             var audio3 = new Audio("filer/[Fang Yuan]“Thes......t for (1).mp3")
             audio3.play();
+            PressedF = 0;
         }
     }
     }
@@ -25,19 +27,21 @@ document.addEventListener("keydown", (event) =>{
         if (PressedT >= 3){
             var audio2 = new Audio("filer/Voicy_You should choose your words more carefully.mp3");
             audio2.play();
+            PressedT = 0;
         };
-    }else{
-        PressedT = 0;
-    };
-
-    document.addEventListener("keysdown", (event) => {
-        console.log(event)
-        document.getElementById("KeyF").style.backgroundColor = "var(--color)"
-
-
-      
-      
-    });
+    }
+  
+    
+        
+        
+    if(event.code == "KeyD") {
+        PressedD += 1;
+        if (PressedD >= 3){
+            var audio4 = new Audio("filer/Voicy_The Power Of The Darkside.mp3");
+            audio4.play();
+            PressedD = 0;
+        }
+    }
 });
 
 
