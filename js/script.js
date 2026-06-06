@@ -54,18 +54,18 @@ document.addEventListener("keydown", (event) =>{
     if(event.code == "KeyQ") {
         PressedQ += 1;
         if (PressedQ >= 3) {
-            var video = document.getElementById("myVideo")
+            var video = document.getElementById("fang yuan qoute")
             video.hidden = false;
             video.play();
             PressedQ = 0
 
-        var video = document.getElementById("myVideo");
+        var video = document.getElementById("fang yuan qoute");
         video.addEventListener("ended", () => {
             video.hidden = true;
         });
     }
 }
-        
+
 
 });
 
@@ -73,4 +73,12 @@ document.addEventListener("keydown", (event) =>{
 document.addEventListener("keyup", (event) => {
     console.log(event);
     document.getElementById(event.code).style.backgroundColor = "white"
+});
+
+document.addEventListener("keydown", (event) => {
+    const input = document.getElementById("textWrite")
+
+    if (event.key.length == 1) {
+        input.value += event.key;
+    }
 });
