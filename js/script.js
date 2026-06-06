@@ -3,6 +3,7 @@ var PressedF = 0;
 var PressedD = 0;
 var PressedA = 0;
 var PressedQ = 0;
+var PressedE = 0;
 
 document.addEventListener("keydown", (event) =>{
     console.log(event)
@@ -65,8 +66,20 @@ document.addEventListener("keydown", (event) =>{
         });
     }
 }
+    if(event.code == "KeyE") {
+        PressedE += 1;
+        if (PressedE >= 3) {
+            var video = document.getElementById("fangYuan2");
+            video.hidden = false;
+            video.play();
+            PressedE = 0
 
-
+            var video = document.getElementById("fangYuan2");
+            video.addEventListener("ended", () => {
+                video.hidden = true;
+            })
+        }
+    }
 });
 
 
