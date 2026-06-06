@@ -17,9 +17,8 @@ body{
     display: grid;
     grid-template-rows: 1fr, 1fr, 60px ,1fr ,1fr, 1fr;
     grid-template-columns: 1fr;
+    box-shadow: 1px 1px 12px 8px ghostwhite;;
     transform: translate(75px)
-    
-    
 }
 
 .row{
