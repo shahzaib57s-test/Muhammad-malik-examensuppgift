@@ -1,6 +1,7 @@
 var PressedT = 0;
 var PressedF = 0;
 var PressedD = 0;
+var PressedA = 0;
 
 document.addEventListener("keydown", (event) =>{
     console.log(event)
@@ -31,9 +32,6 @@ document.addEventListener("keydown", (event) =>{
         };
     }
   
-    
-        
-        
     if(event.code == "KeyD") {
         PressedD += 1;
         if (PressedD >= 3){
@@ -42,6 +40,16 @@ document.addEventListener("keydown", (event) =>{
             PressedD = 0;
         }
     }
+
+    if(event.code == "KeyA") {
+        PressedA += 1;
+        if (PressedA >= 3){
+            var audio5 = new Audio("filer/bruh-sound-effect_WstdzdM.mp3")
+            audio5.play();
+            PressedA = 0
+        }
+    }
+
 });
 
 
