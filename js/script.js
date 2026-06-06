@@ -2,6 +2,7 @@ var PressedT = 0;
 var PressedF = 0;
 var PressedD = 0;
 var PressedA = 0;
+var PressedQ = 0;
 
 document.addEventListener("keydown", (event) =>{
     console.log(event)
@@ -49,6 +50,22 @@ document.addEventListener("keydown", (event) =>{
             PressedA = 0
         }
     }
+
+    if(event.code == "KeyQ") {
+        PressedQ += 1;
+        if (PressedQ >= 3) {
+            var video = document.getElementById("myVideo")
+            video.hidden = false;
+            video.play();
+            PressedQ = 0
+
+        var video = document.getElementById("myVideo");
+        video.addEventListener("ended", () => {
+            video.hidden = true;
+        });
+    }
+}
+        
 
 });
 
