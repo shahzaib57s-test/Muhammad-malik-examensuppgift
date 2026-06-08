@@ -4,6 +4,8 @@ var PressedD = 0;
 var PressedA = 0;
 var PressedQ = 0;
 var PressedE = 0;
+var PressedS = 0;
+var PressedB = 0;
 
 document.addEventListener("keydown", (event) =>{
     console.log(event)
@@ -80,8 +82,27 @@ document.addEventListener("keydown", (event) =>{
             })
         }
     }
-});
+    if(event.code == "KeyS") {
+        PressedS += 1;
+        if (PressedS >= 3) {
+            var video = document.getElementById("fate")
+            video.hidden = false;
+            video.play();
+            PressedS = 0
 
+            var video = document.getElementById("fate");
+            video.addEventListener("ended", () => {
+                video.hidden = true;
+            })
+        }
+    }
+    if (event.code =="KeyB") {
+        PressedB += 1;
+        if (PressedB >= 3) {
+            document.body.style.backgroundImage = "url('filer/gif web.gif')";
+        }
+    }
+});
 
 document.addEventListener("keyup", (event) => {
     console.log(event);
