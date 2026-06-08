@@ -5,7 +5,6 @@ var PressedA = 0;
 var PressedQ = 0;
 var PressedE = 0;
 var PressedS = 0;
-var PressedB = 0;
 
 document.addEventListener("keydown", (event) =>{
     console.log(event)
@@ -97,11 +96,23 @@ document.addEventListener("keydown", (event) =>{
         }
     }
     if (event.code =="KeyB") {
-        PressedB += 1;
-        if (PressedB >= 3) {
             document.body.style.backgroundImage = "url('filer/gif web.gif')";
         }
-    }
+    if (event.code =="KeyN") {
+            document.body.style.backgroundImage = "url('filer/wave.gif')";
+        }
+    if (event.code =="KeyM") {
+            document.body.style.backgroundImage = "url('filer/water.gif')";
+        }   
+    if (event.code =="KeyL") {
+            document.body.style.backgroundImage = "url('filer/light.gif')";
+        }
+        if (event.code =="KeyK") {
+            document.body.style.backgroundImage = "url('filer/light.gif')";
+        }
+        if (event.code =="KeyK") {
+            document.body.style.backgroundImage = "url('filer/dark.gif')";
+        }
 });
 
 document.addEventListener("keyup", (event) => {
