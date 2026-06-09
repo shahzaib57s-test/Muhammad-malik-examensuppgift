@@ -16,7 +16,7 @@ body{
     display: grid;
     grid-template-rows: 1fr, 1fr, 60px ,1fr ,1fr, 1fr;
     grid-template-columns: 1fr;
-    box-shadow: 1px 1px 12px 8px ghostwhite;;
+    box-shadow: 1px 1px 12px 8px ghostwhite;
     transform: translate(75px)
 }
 
@@ -99,4 +99,19 @@ div:last-child {
 #pet{
     text-align: center;
     font-size: 50px;
+    margin: 5px;
+}
+
+#PText{
+    transform: translate(340px, -50px);
+}
+
+#section{
+    border: 2px, solid, black;
+    position: absolute;
+    top: -2px;
+    box-shadow: 1px 1px 12px 8px whitesmoke;
+    background-color: white;
+    color: black;
+    
 }

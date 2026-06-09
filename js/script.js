@@ -160,11 +160,11 @@ document.addEventListener("keydown", (event) => {
 
 let PetTimer;
 document.addEventListener("keydown", () =>{
-    document.getElementById("pet").innerHTML = "😊";
-    document.getElementById("PText").innerHTML = "Yay texts!"
+    document.getElementById("pet").innerHTML = "🤗";
+    document.getElementById("PText").innerHTML = "Yay, texts!"
     clearTimeout(PetTimer);
     PetTimer = setTimeout(() => {
         document.getElementById("pet").innerHTML = "🥺";
-        document.getElementById("PText").innerHTML = "Dont leave me, text more please"
+        document.getElementById("PText").innerHTML = "Text more please"
     }, 3000);
 });
