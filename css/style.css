@@ -95,3 +95,8 @@ div:last-child {
     border-radius: 20px;
     box-shadow: 1px 1px 12px 8px orchid;
 }
+
+#pet{
+    text-align: center;
+    font-size: 50px;
+}

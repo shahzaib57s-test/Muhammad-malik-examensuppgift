@@ -157,3 +157,14 @@ document.addEventListener("keydown", (event) => {
         input.value += event.key;
     }
 });
+
+let PetTimer;
+document.addEventListener("keydown", () =>{
+    document.getElementById("pet").innerHTML = "😊";
+    document.getElementById("PText").innerHTML = "Yay texts!"
+    clearTimeout(PetTimer);
+    PetTimer = setTimeout(() => {
+        document.getElementById("pet").innerHTML = "🥺";
+        document.getElementById("PText").innerHTML = "Dont leave me, text more please"
+    }, 3000);
+});
