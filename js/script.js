@@ -5,6 +5,8 @@ var PressedA = 0;
 var PressedQ = 0;
 var PressedE = 0;
 var PressedS = 0;
+var PressedR = 0;
+var PressedG = 0;
 
 document.addEventListener("keydown", (event) =>{
     console.log(event)
@@ -90,6 +92,34 @@ document.addEventListener("keydown", (event) =>{
             PressedS = 0
 
             var video = document.getElementById("fate");
+            video.addEventListener("ended", () => {
+                video.hidden = true;
+            })
+        }
+    }
+    if(event.code == "KeyR") {
+        PressedR += 1;
+        if (PressedR >= 3) {
+            var video = document.getElementById("qoute4")
+            video.hidden = false;
+            video.play();
+            PressedS = 0
+
+            var video = document.getElementById("qoute4");
+            video.addEventListener("ended", () => {
+                video.hidden = true;
+            })
+        }
+    }
+    if(event.code == "KeyG") {
+        PressedG += 1;
+        if (PressedG >= 3) {
+            var video = document.getElementById("Race")
+            video.hidden = false;
+            video.play();
+            PressedS = 0
+
+            var video = document.getElementById("Race");
             video.addEventListener("ended", () => {
                 video.hidden = true;
             })
