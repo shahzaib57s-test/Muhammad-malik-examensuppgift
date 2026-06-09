@@ -82,9 +82,6 @@ div:last-child {
     transition-timing-function: ease-in;
 }
 
-.key.tp-color {
-    transition-property: background-color;
-}
 
 #textWrite{
     background-color: black;
